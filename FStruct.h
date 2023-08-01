@@ -1,4 +1,4 @@
-/*
+﻿/*
 该项目签署了Apache-2.0 License，详情请参见LICENSE
 根据 Apache 许可，版本 2.0（“许可”）获得许可
 除非遵守许可，否则您不得使用此文件。
@@ -140,6 +140,8 @@ struct result {
 	int code;           //1.正确 0.错误
 	string message;     //如果错误，返回错误提示
 };
+
+class FdogSerializer;
 
 //声明序列化base类
 class FdogSerializerBase {
@@ -553,14 +555,14 @@ void F_init_s(T & object, InitVectorTag, string first, string second = "", strin
 template<typename T>
 void F_init_s(T & object, InitVectorStrTag, string first, string second = "", string key = "") {
 	// " F_init_s object size = " << object.size() << endl;
-	if (first == "char*") {
-		object.push_back("");
-	}
-	else if (first == "string") {
-		object.push_back("");
-	}
-	else {
-	}
+	//if (first == "char*") {
+	//	object.push_back("");
+	//}
+	//else if (first == "string") {
+	//	object.push_back("");
+	//}
+	//else {
+	//}
 }
 
 template<typename T>
@@ -611,15 +613,15 @@ void F_init_s(T & object, InitDequeTag, string first, string second = "", string
 
 template<typename T>
 void F_init_s(T & object, InitDequeStrTag, string first, string second = "", string key = "") {
-	if (first == "char*") {
-		object.push_back("");
-	}
-	else if (first == "string") {
-		object.push_back("");
-	}
-	else {
+	//if (first == "char*") {
+	//	object.push_back("");
+	//}
+	//else if (first == "string") {
+	//	object.push_back("");
+	//}
+	//else {
 
-	}
+	//}
 }
 
 template<typename T>
@@ -673,15 +675,15 @@ void F_init_s(T & object, InitListTag, string first, string second = "", string 
 
 template<typename T>
 void F_init_s(T & object, InitListStrTag, string first, string second = "", string key = "") {
-	if (first == "char*") {
-		object.push_back("");
-	}
-	else if (first == "string") {
-		object.push_back("");
-	}
-	else {
+	//if (first == "char*") {
+	//	object.push_back("");
+	//}
+	//else if (first == "string") {
+	//	object.push_back("");
+	//}
+	//else {
 
-	}
+	//}
 }
 
 template<typename T>
